@@ -1,0 +1,504 @@
+.header_wrapper {
+    background-color: #5f0080;
+    height: 50px;
+    padding-top: 7px;
+}
+
+.header_detail_wrapper {
+    background-color: #fff;
+    height: 50px;
+}
+
+.bottom_wrapper {
+    position: sticky;
+    z-index: 1100;
+}
+
+.section_list_wrapper {
+    padding: 0 0 50px;
+}
+
+.section_wrapper {
+    margin: 50px 0;
+}
+
+.header_logo {
+    background: url(../imgs/logo_white.png) no-repeat center;
+    background-size: auto 40px;
+    display: block;
+    height: 36px;
+}
+
+.header_detail_logo {
+    background: url(../imgs/logo_purple.png) no-repeat center;
+    background-size: auto 40px;
+    display: block;
+    height: 50px;
+}
+
+img.banner_img {
+    width: 100%;
+    background-position: center center;
+}
+
+@media screen and (max-width: 1024px) {
+    img.banner_img {
+        width: 100%;
+    }
+}
+
+.qna_text_grey {
+    font-size: 13px;
+    color: #999;
+}
+
+.qna_text {
+    display: inline-block;
+    overflow: hidden;
+    height: 22px;
+    max-width: calc(100% - 50px);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.qna_wrap {
+    padding: 20px 20px 70px;
+    min-height: 400px;
+}
+
+.qna_wrap input {
+    width: 100%;
+    height: 40px;
+    padding-left: 12px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -.75px;
+    border: 1px solid #ccc;
+    margin: 8px 0px 20px
+}
+
+.qna_wrap input:focus {
+    border: 1px solid #999;
+}
+
+.qna_wrap textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -.75px;
+    border: 1px solid #ccc;
+    margin: 8px 0px 20px;
+    vertical-align: top;
+}
+
+.qna_wrap textarea:focus {
+    border: 1px solid #999;
+}
+
+.btn_submit {
+    height: 42px;
+    font-size: 15px;
+    line-height: 42px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    border: 1px solid #5f0080;
+    color: #5f0080;
+    margin: 16px 0;
+}
+
+.btn_more {
+    width: 94%;
+    color: #dc004e;
+    border: 1px solid #dc004e;
+    background-color: #fff;;
+    line-height: 45px;
+    font-size: 14px;
+    margin: 10px
+}
+
+.Mui-selected span {
+    color: #5f0080;
+    font-size: 15px;
+}
+
+.MuiTab-wrapper {
+    color: #666
+}
+
+.MuiMobileStepper-root {
+    background: none !important;
+}
+
+.MuiMobileStepper-dots {
+    margin: auto;
+}
+
+.MuiMobileStepper-dotActive {
+    background-color: #5f0080 !important;
+
+}
+
+.link_back {
+    position: absolute;
+    left: 6px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.cart_count {
+    position: absolute;
+    right: 6px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.link_svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.cart_svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 13px 0 0 6px;
+    pointer-events: none;
+}
+
+.section_title {
+    padding: 16px;
+    display: block;
+}
+
+.section_text {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart_footer {
+    display: flex;
+    width: 100%;
+    height: 68px;
+    padding: 8px 12px;
+}
+
+.pick_icon_button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: transparent;
+    background: url(https://res.kurly.com/pc/service/pick/btn-itemdetail-like-off.svg) no-repeat center;
+    background-size: 32px;
+}
+
+.alarm_button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: transparent;
+    background: url(https://res.kurly.com/pc/service/pick/btn-itemdetail-restock-off.svg) no-repeat center;
+    background-size: 32px;
+}
+
+.alarm_button:disabled {
+    background: url(https://res.kurly.com/pc/service/pick/btn-itemdetail-restock-dim.svg) no-repeat center;
+    background-size: 32px;
+}
+
+.button_wrap {
+    flex-grow: 1;
+}
+
+.functions {
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.one {
+    position: relative;
+    display: block;
+    padding-left: 16px;
+    margin-left: -8px;
+}
+
+.two {
+    padding-bottom: 8px;
+}
+
+.three {
+    position: relative;
+    background: rgb(238, 238, 238);
+}
+
+.four {
+    padding-bottom: 130%;
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+.five {
+    position: absolute;
+    inset: 0px;
+}
+
+.six {
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 100%;
+}
+
+.seven {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eight {
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    right: 8px;
+    bottom: 8px;
+    width: 36px;
+    height: 36px;
+}
+
+.nine {
+    display: block;
+    border: 0px;
+    background: none;
+    outline: 0px;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+
+.ten {
+    width: 100%;
+    height: 100%;
+}
+
+.ten-one {
+    position: relative;
+    z-index: 140;
+    display: block;
+    padding: 8px 0px;
+}
+
+.ten-two {
+    width: 100%;
+    margin-bottom: 4px;
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    line-height: 1.38;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: none;
+}
+
+.ten-three {
+    font-size: 14px;
+    line-height: 1.36;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    letter-spacing: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.ten-four {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 0px 2px;
+}
+
+.ten-five {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ten-six {
+    color: rgb(250, 98, 47);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    margin-right: 4px;
+    white-space: nowrap;
+}
+
+.ten-seven {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    white-space: nowrap;
+    letter-spacing: normal;
+}
+
+.ten-eight {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-decoration: line-through;
+}
+
+
+.big-one {
+    outline: none;
+    width: 267px;
+}
+
+.big-two {
+    width: 100%;
+    display: inline-block;
+    padding: 0px 9px;
+}
+
+.big-three {
+    width: 249px;
+    height: 320px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.big-four {
+    position: relative;
+    z-index: 150;
+}
+
+.big-five {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.big-six {
+    position: absolute;
+    z-index: 300;
+    display: block;
+    right: 16px;
+    bottom: 16px;
+    width: 45px;
+    height: 45px;
+}
+
+.big-seven {
+    display: block;
+    border: 0px;
+    background: none;
+    outline: 0px;
+    user-select: none;
+}
+
+.big-eight {
+    position: relative;
+    z-index: 140;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 10px 0px 0px;
+}
+
+.big-nine {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    line-height: 1.38;
+    display: none;
+}
+
+.big-ten {
+    font-size: 16px;
+    line-height: 1.45;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    letter-spacing: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.big-ten-one {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.big-ten-two {
+    color: rgb(250, 98, 47);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-right: 7px;
+}
+
+.big-ten-three {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.big-ten-four {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+    margin-top: 2px;
+}
+
+.web-react-swipeable-view-container {
+    height: 370px;
+}
+
+.web-banner-img {
+    height: 370px;
+    width: 100%;
+    display: flex;
+}

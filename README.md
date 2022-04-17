@@ -25,3 +25,6 @@ Works for multi-screen.<br />
 ##### To-do
 - Using dummy data scrapped manually from Market Kurly site. Need to make Database.
 - sign up, sign in, add to cart, leave qna, like ... functions!!!
+
+##### Cloning Site
+- Market Kurly(KR): [https://www.kurly.com/](https://www.kurly.com/) 

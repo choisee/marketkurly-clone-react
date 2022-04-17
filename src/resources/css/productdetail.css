@@ -1,0 +1,238 @@
+.base_button {
+    height: 52px;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff !important;
+    background-color: #5f0081 !important;
+    border: 1px solid #5f0081 !important;
+    flex: 1 !important;
+    margin-left: 10px !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #5f0081 !important;
+}
+
+.goods_name {
+    overflow: hidden;
+    padding: 18px 16px 19px;
+}
+
+.btn_share {
+    display: block;
+    position: relative;
+}
+
+#btnShare {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url(https://res.kurly.com/kurly/ico/2021/share_40_40_c333.svg) no-repeat 50% 50%;
+    background-size: 40px 40px;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+.sectionView .goods_name .name {
+    display: block;
+    padding-right: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    word-break: break-all;
+}
+
+.sectionView .goods_name .short_desc {
+    display: block;
+    padding: 2px 50px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+    word-break: break-all;
+}
+
+.sectionView .goods_dcinfo {
+    padding: 0 16px;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+
+.sectionView .goods_price {
+    margin-bottom: 24px;
+    padding: 18px 16px 19px;
+}
+
+.sectionView .goods_price .dc {
+    display: block;
+}
+
+.sectionView .goods_price .dc_price {
+    padding-right: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    word-break: break-all;
+}
+
+.sectionView .goods_price .dc_percent {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fa622f;
+    line-height: 26px;
+    letter-spacing: -.5px;
+}
+
+.sectionView .goods_price .original_price {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    line-height: 24px;
+}
+
+.sectionView .goods_price .price {
+    text-decoration: line-through;
+}
+
+.sectionView .goods_price .ico {
+    width: 24px;
+    height: 24px;
+    vertical-align: -6px;
+}
+
+.sectionView .goods_price .not_login {
+    display: block;
+    font-size: 14px;
+    color: #5f0080;
+    line-height: 19px;
+    letter-spacing: -.5px;
+}
+
+.sectionView .goods_info {
+    padding: 24px 16px;
+    border-top: 8px solid #f4f4f4;
+}
+
+.sectionView .goods_info .list {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.sectionView .goods_info .title {
+    float: left;
+    width: 90px;
+    padding-right: 4px;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.sectionView .goods_info .description {
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: break-all;
+}
+
+.goods_wrap {
+    margin: 0 auto;
+    padding: 0 10px;
+    font-family: noto sans;
+    font-weight: 200;
+    letter-spacing: 0;
+    font-family: 'Nanum Gothic', 'Noto Sans', AppleGothic, 'AppleSDGothicNeo-Light';
+    letter-spacing: -.05em;
+    color: #212121;
+    text-align: center;
+}
+
+.goods_item {
+    margin-bottom: 20px;
+}
+
+.context.last {
+    margin-bottom: 100px;
+}
+
+.goods_board {
+    padding: 20px 10px;
+}
+
+.list {
+    padding-top: 20px;
+}
+
+.list li {
+    letter-spacing: -.7px;
+    padding: 10px 10px 8px;
+    border-top: 1px solid #dddfe1;
+    background-color: #fff;
+}
+
+.subject {
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.writer .grade_comm {
+    position: relative;
+    height: 26px;
+    padding-top: 8px;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+
+.goods_board .writer .ico_grade {
+    margin-top: -1px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+.grade_comm .ico_grade {
+    display: inline-block;
+    min-width: 44px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.grade_comm .grade5 {
+    border: 1px solid #cba3e9;
+    color: #cba3e9;
+}
+
+.grade_comm .grade3 {
+    border: 1px solid #500f7c;
+    color: #4f177a;
+}
+
+.nav-tabpanel {
+    padding-bottom: 60px;
+
+}
