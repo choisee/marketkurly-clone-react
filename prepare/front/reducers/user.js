@@ -1,15 +1,18 @@
 import produce from "immer";
 
-const sampleData = {
-  id: "1",
-  email: "abc@clone.com",
-  name: "최초",
-  inCart: [],
-};
+// const sampleData = {
+//   id: "1",
+//   email: "abc@clone.com",
+//   name: "최초",
+//   inCart: [],
+// };
 
 export const initialState = {
   isLoggedIn: false,
   logInLoading: false,
+  logInError: false,
+  logOutLoading: false,
+  logOutError: false,
   isSignUpDone: false,
   signUpLoading: false,
   signUpError: false,
@@ -105,12 +108,13 @@ const reducer = (state = initialState, action) =>
         break;
       }
       case LOG_IN: {
-        draft.user = sampleData;
         draft.logInLoading = true;
         draft.logInData = action.data;
+        draft.logInError = null;
         break;
       }
       case LOG_IN_SUCCESS: {
+        draft.user = action.data;
         draft.logInLoading = false;
         draft.isLoggedIn = true;
         break;
@@ -118,13 +122,23 @@ const reducer = (state = initialState, action) =>
       case LOG_IN_FAILED: {
         draft.logInLoading = false;
         draft.isLoggedIn = false;
+        draft.logInError = action.error;
         break;
       }
       case LOG_OUT: {
-        draft.isSignUpDone = false; // todo 확인필요
-        draft.isLoggedIn = false;
+        draft.logOutLoading = true;
+        draft.logOutError = null;
+        break;
+      }
+      case LOG_OUT_SUCCESS: {
         draft.user = null;
-        draft.inCart = [];
+        draft.logOutLoading = false;
+        draft.isLoggedIn = false;
+        break;
+      }
+      case LOG_OUT_FAILED: {
+        draft.logOutLoading = false;
+        draft.logOutError = action.error;
         break;
       }
       default:

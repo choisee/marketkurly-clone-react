@@ -42,22 +42,26 @@ const SignIn = () => {
   const [email, onChangeEmail] = useInput("");
   const [password, onChangePassword] = useInput("");
 
-  const { logInLoading, isLoggedIn } = useSelector((state) => state.user);
+  const { logInLoading, isLoggedIn, logInError } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (logInError) {
+      alert(logInError);
+    }
+
     if (isLoggedIn) {
       // 로그인 후 첫화면으로 이동
       Router.replace("/");
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, logInError]);
 
   const onSubmitSignIn = useCallback(
     (e) => {
       e.preventDefault();
       dispatch(logIn({ email: email, password: password }));
     },
-    [password],
+    [password]
   );
 
   const onClickSignup = useCallback(() => {

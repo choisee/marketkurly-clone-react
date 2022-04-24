@@ -16,24 +16,26 @@ const iconEnum = {
 };
 
 const MyMenuItem = ({ item }) => {
-  const { isLoggedIn } = useSelector((state) => state.user); // redux data
+  const { isLoggedIn, logOutError } = useSelector((state) => state.user); // redux data
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (logOutError) {
+      console.error(logOutError);
+      // alert(logOutError);
+    }
     if (!isLoggedIn) {
       console.log(isLoggedIn);
       // alert('로그아웃 되었습니다.');
       Router.push("/");
       // Router.replace(item.goto);
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, logOutError]);
 
   const onClickItem = useCallback(
     (item) => (e) => {
       e.stopPropagation();
 
-      console.log(item);
-      console.log(isLoggedIn);
       if (item.type === "logout") {
         dispatch(logOut());
       } else if (item.type === "emptyCart") {
@@ -45,7 +47,7 @@ const MyMenuItem = ({ item }) => {
         Router.push(item.goto);
       }
     },
-    [],
+    []
   );
 
   return (

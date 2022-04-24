@@ -45,7 +45,7 @@ const SignUp = () => {
   const [name, onChangeName] = useInput("");
   const [password, onChangePassword] = useInput("");
 
-  const { signUpLoading, isSignUpDone, signUpError } = useSelector((state) => state.user);
+  const { signUpLoading, isSignUpDone, signUpError, user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
 
@@ -69,6 +69,12 @@ const SignUp = () => {
     },
     [password, passwordCheck, term]
   );
+
+  useEffect(() => {
+    if (user && user.id) {
+      Router.replace("/signin");
+    }
+  }, [user && user.id]);
 
   useEffect(() => {
     if (isSignUpDone) {
